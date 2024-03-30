@@ -7,9 +7,11 @@ Este projeto consiste em um programa Python para coletar respostas de uma pesqui
 Certifique-se de ter o Python instalado em seu computador. Se não tiver, você pode baixá-lo em python.org.
 O código utiliza a biblioteca Tkinter para a interface gráfica, que geralmente é incluída na instalação padrão do Python.
 
-# 2. Baixando o código:
+# 2. Baixando ou clonando código:
 
 Baixe ou clone este repositório para o seu computador.
+
+`git clone https://github.com/Dannfonseca/Executavel-py.git`
 
 # 3. Executando o programa:
 
