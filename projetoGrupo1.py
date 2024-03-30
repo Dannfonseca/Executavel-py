@@ -9,6 +9,11 @@ def validar_resposta(resposta):
     if resposta not in ['1', '2', '3']:
         return False
     return True
+def validar_resposta1(resposta):
+    # Verifica se a resposta contém apenas números 1, 2 ou 3
+    if resposta not in ['1', '2', '3','4','5','6','7','8','9','10']:
+        return False
+    return True
 
 def validar_idade(idade):
     # Verifica se a idade está entre 0 e 120
@@ -54,11 +59,11 @@ def realizar_pesquisa():
                     messagebox.showerror("Erro", "Por favor, insira uma idade válida entre 0 e 120 anos.")
 
             genero = None
-            while genero is None or not validar_resposta(genero):
+            while genero is None or not validar_resposta1(genero):
                 genero = simpledialog.askstring("Gênero", "Qual o seu gênero?\n1- Masculino\n2- Feminino\n3- Não binário\n4- Agênero\n5- Gênero fluido\n6- Bigênero\n7- Transgênero\n8- Intersexo\n9- Outro\n10- Prefiro não dizer")
                 if genero is None:
                     return
-                if not validar_resposta(genero):
+                if not validar_resposta1(genero):
                     messagebox.showerror("Erro", "Por favor, insira um gênero válido.")
 
             respostas = []
