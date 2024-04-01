@@ -48,6 +48,9 @@ class Aplicacao(tk.Tk):
 
     def salvar_pesquisa(self):
         data_nascimento_str = self.data_nascimento_entry.get()
+        if data_nascimento_str == "00":
+            self.destroy()  # Fecha a janela
+            return
         try:
             self.pesquisa.data_nascimento = datetime.strptime(data_nascimento_str, '%d/%m/%Y').date()
             self.pesquisa.idade = self.pesquisa.calcular_idade(self.pesquisa.data_nascimento)
